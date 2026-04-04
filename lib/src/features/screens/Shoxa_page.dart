@@ -16,13 +16,13 @@ class Shoxa_page extends StatefulWidget {
 class _Shoxa_pageState extends State<Shoxa_page> {
   @override
   Widget build(BuildContext context) {
-    bool isChecked = false;
+  bool isChecked = false;
     return Scaffold(
       body: Center(
         child: Dialog(
           child: AlertDialog(
             content: Container(
-              padding: EdgeInsets.symmetric(horizontal:15,vertical: 15 ),
+              padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
               width: 560,
               height: 610,
               decoration: BoxDecoration(
@@ -43,8 +43,9 @@ class _Shoxa_pageState extends State<Shoxa_page> {
                     ),
                   ),
                   SizedBox(height: 10),
-                  Column(  mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Text(
                         'Дрель-шуруповерт аккумуляторная MAKITA DF \n347DWE14 В 1,5 А/ч',
@@ -72,7 +73,9 @@ class _Shoxa_pageState extends State<Shoxa_page> {
                     ],
                   ),
                   SizedBox(height: 10),
-                SizedBox(width:50 ,),  custom_textField(),SizedBox(width:50 ,),
+                  SizedBox(width: 50),
+                  custom_textField(),
+                  SizedBox(width: 50),
                   SizedBox(height: 20),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -112,16 +115,16 @@ class _Shoxa_pageState extends State<Shoxa_page> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Checkbox.adaptive(
-                        value: isChecked,
-                        onChanged: (value) {
-                          setState(() {
-                            isChecked = value!;
-                          });
-                        },
-                      ),
+                      Checkbox(
+  value: isChecked,
+  onChanged: (value) {
+    setState(() {
+      isChecked = value!;
+    });
+  },
+),
                       Text(
-                        'Согласен с обработкой персональных данных в \n соответствии с политикой конфиденциальности',
+                        'Согласен с обработкой персональных  \n данных в соответствии с  \n политикой конфиденциальности',
                         style: GoogleFonts.poppins(
                           fontSize: 10,
                           fontWeight: FontWeight.w400,

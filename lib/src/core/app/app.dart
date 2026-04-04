@@ -1,6 +1,9 @@
 
 import 'package:flutter/material.dart';
-import 'package:practice_app/src/features/screens/Shoxa_page.dart';
+import 'package:practice_app/src/features/screens/Parolni_tiklash.dart';
+import 'package:practice_app/src/features/screens/Resgister_Page.dart';
+final _formKey = GlobalKey<FormState>();
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -15,6 +18,6 @@ class MyApp extends StatelessWidget {
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-   home: Shoxa_page(), );
+   home: ParolniTiklashPage(), );
   }
 }
