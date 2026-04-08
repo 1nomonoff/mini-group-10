@@ -5,6 +5,7 @@ import 'package:practice_app/src/features/korzina/logic/korzinka_cubir.dart';
 import 'package:practice_app/src/features/korzina/screens/korzina_screen.dart';
 
 
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -20,6 +21,6 @@ class MyApp extends StatelessWidget {
         create: (context) => CounterCubit(),
         child: const KorzinaScreen(),
       ),
-    );
+
   }
 }
