@@ -3,7 +3,7 @@ import 'package:get_storage/get_storage.dart';
 
 class DioConfig {
   static Dio dio = Dio(BaseOptions(
-      baseUrl: "https://api-service.fintechhub.uz/",
+      baseUrl: "https://",
       sendTimeout: Duration(seconds: 150),
       receiveTimeout: Duration(seconds: 150),
       connectTimeout: Duration(seconds: 150)));
