@@ -35,7 +35,7 @@ class ProductItemWidget extends StatelessWidget {
 
         SizedBox(
           height: 120,
-          width: double.infinity,
+          width: 77,
           child: Center(child: Image.asset(product.image, fit: BoxFit.contain)),
         ),
 

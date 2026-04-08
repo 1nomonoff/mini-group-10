@@ -16,7 +16,7 @@ class _KorzinaScreenState extends State<KorzinaScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       backgroundColor: const Color(0xffF5F5F5),
+      backgroundColor: const Color(0xffF5F5F5),
       appBar: AppBar(
         leading: InkWell(
           onTap: () {},
@@ -46,28 +46,28 @@ class _KorzinaScreenState extends State<KorzinaScreen> {
                 children: [
                   Divider(thickness: 1),
                   Image.asset("assets/images/logo 1.png"),
-                  SizedBox(width: 21),
+                  SizedBox(width: 18),
                   SizedBox(
                     height: 33,
-                    width: 35,
+                    width: 28,
                     child: Image.asset("assets/images/profile.png"),
                   ),
-                  SizedBox(width: 6),
+                  SizedBox(width: 3),
                   SizedBox(
                     height: 33,
-                    width: 35,
+                    width: 28,
                     child: Image.asset("assets/images/catalog.png"),
                   ),
-                  SizedBox(width: 6),
+                  SizedBox(width: 3),
                   SizedBox(
                     height: 33,
-                    width: 35,
+                    width: 28,
                     child: Image.asset("assets/images/like.png"),
                   ),
-                  SizedBox(width: 6),
+                  SizedBox(width: 3),
                   SizedBox(
                     height: 33,
-                    width: 35,
+                    width: 28,
                     child: Image.asset("assets/images/korzinka.png"),
                   ),
                   SizedBox(width: 6),
@@ -102,7 +102,7 @@ class _KorzinaScreenState extends State<KorzinaScreen> {
                   Container(
                     padding: EdgeInsets.all(8),
                     height: 46,
-                    width: 186,
+                    width: 156,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
                       color: Colors.blue,
@@ -114,10 +114,24 @@ class _KorzinaScreenState extends State<KorzinaScreen> {
                         Expanded(
                           child: TextField(
                             decoration: InputDecoration(
+                              filled: true,
                               fillColor: Colors.white,
+
                               border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(8),
+                                borderSide: BorderSide.none, 
                               ),
+
+                              enabledBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(8),
+                                borderSide: BorderSide.none,
+                              ),
+
+                              focusedBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(8),
+                                borderSide: BorderSide.none,
+                              ),
+
                               hintText: "Поиск...",
                               hintStyle: const TextStyle(
                                 fontSize: 12,
@@ -258,7 +272,7 @@ class _KorzinaScreenState extends State<KorzinaScreen> {
                           children: [
                             SizedBox(
                               height: 90,
-                              width: 90,
+                              width: 77,
                               child: Image.asset('assets/images/drel1.png'),
                             ),
                             SizedBox(width: 15),
@@ -282,7 +296,7 @@ class _KorzinaScreenState extends State<KorzinaScreen> {
                         SizedBox(height: 10),
                         Container(
                           height: 43,
-                          width: 330,
+                          width: 318,
                           decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(8),
@@ -375,14 +389,13 @@ class _KorzinaScreenState extends State<KorzinaScreen> {
                   ProductItemWidget(
                     image: 'assets/images/drel2.png',
                     title: "Перфоратор универсальный\n Wander X645-46 GF 1450W",
-                    article: "Артикул: XJ89YHGO", 
+                    article: "Артикул: XJ89YHGO",
                   ),
                   Divider(thickness: 1),
                   ProductItemWidget(
                     image: 'assets/images/drel3.png',
                     title: "Перфоратор универсальный\n Wander X645-46 GF 1450W",
                     article: "Артикул: XJ89YHGO",
-                    
                   ),
                   Divider(thickness: 1),
                   ProductItemWidget(

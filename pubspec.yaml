@@ -36,6 +36,8 @@ dependencies:
   cupertino_icons: ^1.0.8
   bloc: ^9.2.0
   flutter_bloc: ^9.1.1
+  get_storage: ^2.1.1
+  dio: ^5.9.2
   
 
 dev_dependencies:

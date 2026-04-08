@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:practice_app/src/features/korzina/logic/korzinka_cubir.dart';
-import 'package:practice_app/src/features/korzina/model/product_model.dart';
+
 
 class ProductItemWidget extends StatelessWidget {
   final String image;
@@ -23,7 +23,7 @@ class ProductItemWidget extends StatelessWidget {
           children: [
             SizedBox(
               height: 90,
-              width: 90,
+              width: 77,
               child: Image.asset(image), 
             ),
             SizedBox(width: 15),
@@ -78,7 +78,7 @@ class ProductItemWidget extends StatelessWidget {
 
                   Text(
                     "$count",
-                    style: TextStyle(fontSize: 18),
+                    style: TextStyle(fontSize: 14),
                   ),
 
                   SizedBox(width: 10),

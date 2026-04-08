@@ -33,19 +33,14 @@ class _SravnenieScreenState extends State<SravnenieScreen> {
         centerTitle: true,
         title: const Text(
           '8 800 444 00 65',
-          style: TextStyle(
-            color: Colors.black,
-            fontSize: 15,
-          ),
+          style: TextStyle(color: Colors.black, fontSize: 15),
         ),
         actions: [
           InkWell(
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (context) => const IzbraniyScreen(),
-                ),
+                MaterialPageRoute(builder: (context) => const IzbraniyScreen()),
               );
             },
             child: Padding(
@@ -58,11 +53,11 @@ class _SravnenieScreenState extends State<SravnenieScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-             SizedBox(height: 10),
+            SizedBox(height: 10),
 
-             SravnenieHeaderSection(),
+            SravnenieHeaderSection(),
 
-             SizedBox(height: 10),
+            SizedBox(height: 10),
 
             SravnenieFilterSection(
               onlyDifference: onlyDifference,
@@ -73,20 +68,16 @@ class _SravnenieScreenState extends State<SravnenieScreen> {
               },
             ),
 
-             SizedBox(height: 10),
+            SizedBox(height: 10),
 
-             SravnenieProductSection(),
+            SravnenieProductSection(),
 
-             SizedBox(height: 10),
+            SizedBox(height: 10),
 
-             SravnenieTableSection(),
+            SravnenieTableSection(),
           ],
         ),
       ),
     );
   }
 }
-
-
-
-

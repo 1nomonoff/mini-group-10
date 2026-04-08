@@ -27,7 +27,7 @@ class _IzbraniyScreenState extends State<IzbraniyScreen> {
         ],
       ),
 
-      /// 🔥 BODY
+     
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -35,7 +35,6 @@ class _IzbraniyScreenState extends State<IzbraniyScreen> {
 
              SizedBox(height: 30),
 
-            /// TOP MENU (sening kod)
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
