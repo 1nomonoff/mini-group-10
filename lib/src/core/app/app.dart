@@ -1,23 +1,26 @@
-
 import 'package:flutter/material.dart';
-import 'package:practice_app/src/features/presentation/screens/Parolni_tiklash.dart';
-import 'package:practice_app/src/features/presentation/screens/Resgister_Page.dart';
-final _formKey = GlobalKey<FormState>();
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:practice_app/src/features/izbraniy/screens/izbraniy_screen.dart';
+import 'package:practice_app/src/features/korzina/logic/korzinka_cubir.dart';
+import 'package:practice_app/src/features/korzina/screens/korzina_screen.dart';
+
 
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Practise',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-       
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
       ),
-      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-   home: ParolniTiklashPage(), );
+      home: BlocProvider(
+        create: (context) => CounterCubit(),
+        child: const KorzinaScreen(),
+      ),
+
   }
 }
