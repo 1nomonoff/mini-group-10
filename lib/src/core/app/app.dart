@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:practice_app/src/features/izbraniy/screens/izbraniy_screen.dart';
-import 'package:practice_app/src/features/korzina/logic/korzinka_cubir.dart';
-import 'package:practice_app/src/features/korzina/screens/korzina_screen.dart';
 
-
+import '../router/app_router.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -16,11 +12,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
+        scaffoldBackgroundColor: Colors.white,
       ),
-      home: BlocProvider(
-        create: (context) => CounterCubit(),
-        child: const KorzinaScreen(),
-      ),
-
+      onGenerateRoute: AppRouter.onGenerateRoute,
+      initialRoute: '/test',
+    );
   }
 }
