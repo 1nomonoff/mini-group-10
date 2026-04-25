@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:practice_app/src/core/const/app_colors.dart';
+import 'package:practice_app/src/core/widgets/app_icon.dart';
+import 'package:practice_app/src/core/widgets/app_text.dart';
+
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final VoidCallback onCallTap;
 
-  const CustomAppBar({
-    super.key,
-    required this.onCallTap,
-  });
+  const CustomAppBar({super.key, required this.onCallTap});
 
   @override
   Widget build(BuildContext context) {
@@ -19,41 +20,42 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-
             /// 🔥 MENU (Builder ichida)
             Builder(
               builder: (context) {
                 return IconButton(
-                  icon: const Icon(Icons.menu),
+                  icon: AppIcon(
+                    icon: 'menu',
+                    color: AppColor.black,
+                    width: 14,
+                    height: 12,
+                  ),
                   onPressed: () {
-                    Scaffold.of(context).openDrawer(); // 🔥 ishlaydi
+                    Scaffold.of(context).openDrawer();
                   },
                 );
               },
             ),
 
             /// PHONE
-            const Text(
-              "8 800 444 00 65",
-              style: TextStyle(fontWeight: FontWeight.w600),
-            ),
+             AppText(text: "8 800 444 00 65", weight: FontWeight.w600,color: AppColor.black,),
 
             /// BUTTON
             GestureDetector(
               onTap: onCallTap,
               child: Container(
                 padding: const EdgeInsets.symmetric(
-                    horizontal: 12, vertical: 8),
-                decoration: BoxDecoration(
-                  color: const Color(0xFFE7ECF3),
-                  borderRadius: BorderRadius.circular(10),
+                  horizontal: 12,
+                  vertical: 8,
                 ),
-                child: const Text(
-                  "ЗАКАЗАТЬ ЗВОНОК",
-                  style: TextStyle(
-                    color: Color(0xFF186FD4),
-                    fontSize: 12,
-                  ),
+                decoration: BoxDecoration(
+                  color: const Color(0xFFF2F6FC),
+                  borderRadius: BorderRadius.circular(4),
+                ),
+                child: const AppText(
+                  text: 'ЗАКАЗАТЬ ЗВОНОК',
+                  color: Color(0xff2A5E8D),
+                  weight: FontWeight.w700,
                 ),
               ),
             ),

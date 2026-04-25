@@ -51,7 +51,7 @@ class CustomDrawer extends StatelessWidget {
                   _DrawerItem(
                     title: "ВСЕ АКЦИИ",
                     icon: Icons.card_giftcard,
-                    route: '/sales',
+                    route: '/discount',
                   ),
                   _DrawerItem(title: "О КОМПАНИИ", route: '/about'),
                   _DrawerItem(title: "ОПЛАТА", route: '/payment'),
