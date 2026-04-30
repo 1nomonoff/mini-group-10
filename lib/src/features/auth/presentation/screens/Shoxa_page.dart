@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:practice_app/color/AppColor.dart';
-import 'package:practice_app/src/features/widgets/custom.dart';
-import 'package:practice_app/src/features/widgets/custom_textfield.dart';
-import 'package:practice_app/src/features/widgets/customtextfield2.dart';
+import 'package:practice_app/src/core/const/color/AppColor.dart';
+import 'package:practice_app/src/features/auth/presentation/widgets/custom.dart';
+import 'package:practice_app/src/features/auth/presentation/widgets/custom_textfield.dart';
+import 'package:practice_app/src/features/auth/presentation/widgets/customtextfield2.dart';
 
 class Shoxa_page extends StatefulWidget {
   const Shoxa_page({super.key});
