@@ -11,4 +11,8 @@ class AppColor {
   static final Color green = Color(0XFF1B9665);
   static final Color lightred = Color(0XFFEE063E);
   static final Color lightorange = Color(0XFFFF9900);
+  static final Color white = Color(0XFFFFFFFF);
+  static final Color lightgrey = Color(0XFFE0E0E0);
+  static final Color greylight = Color(0xFF2C3E50);
+  static final Color darkgrey = Color(0xFF7F8C8D);
 }

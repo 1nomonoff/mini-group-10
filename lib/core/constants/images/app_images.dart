@@ -33,5 +33,7 @@ class AppImages {
     static const String pit = 'assets/images/PIT.png';
     static const String fireplacee = 'assets/images/fireplace.png';
     static const String makita = 'assets/images/makita.png';
-
+    static const String wander = 'assets/images/WanderX645.png';
+    static const String wander1450W = 'assets/images/1450W.png';
+    static const String redGF = 'assets/images/RedGF.png';
   }
