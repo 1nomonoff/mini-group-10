@@ -13,8 +13,8 @@ class App extends StatelessWidget {
       title: "Test Api",
       // theme: ThemeData.dark(),
       onGenerateRoute: AppRouter.onGenerateRoute,
-      initialRoute: "/politika",
+      initialRoute: "/login",
       navigatorKey: navigatorKey,
-    );
+    );    
   }
 }
